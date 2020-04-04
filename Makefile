@@ -4,6 +4,7 @@ dev:
 	pipenv shell
 
 flake8:
+	pipenv install --dev
 	pipenv run flake8 sec_python_sdk
 
 publish:
