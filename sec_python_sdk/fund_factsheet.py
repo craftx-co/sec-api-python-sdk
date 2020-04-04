@@ -19,7 +19,7 @@ class FundFactsheet():
 
     def get_funds(self, asset_management_companies_unique_id=''):
         result = requests.get(
-            url=f'{self.API_ENDPOINT}/fund/amc/{unique_id}',
+            url=f'{self.API_ENDPOINT}/fund/amc/{asset_management_companies_unique_id}',
             headers={'Ocp-Apim-Subscription-Key': self.api_key}
         )
         return json.loads(result.text)

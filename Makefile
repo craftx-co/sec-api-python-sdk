@@ -5,7 +5,7 @@ dev:
 
 flake8:
 	pipenv install --dev
-	pipenv run flake8 sec_python_sdk
+	pipenv run flake8 --max-line-length=100 sec_python_sdk
 
 publish:
 	pipenv run python setup.py sdist bdist_wheel
