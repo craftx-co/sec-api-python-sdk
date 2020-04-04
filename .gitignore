@@ -3,3 +3,5 @@ dist/
 sec_python_sdk.egg-info/
 
 __pycache__/
+
+.vscode/
